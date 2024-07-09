@@ -51,10 +51,29 @@ public class Main {
         numbers[1] = 2;
         numbers[2] = 3;
         numbers[3] = 4;
-        System.out.println(Arrays.toString(numbers));
-        // new syntax
+        //  System.out.println(Arrays.toString(numbers));
+        // new syntax:
         int[] numbers2 = {5,4,3,2,1};
-        System.out.println(Arrays.toString(numbers2));
+        //  System.out.println(Arrays.toString(numbers2));
+        // System.out.println(numbers.length);
+        // Arrays.sort(numbers2);
+        // System.out.println(Arrays.toString(numbers2));
 
+        // Multi dimensional arrays
+        // old syntax:
+        int[][] numbers3 = new int[2][3];
+        numbers3[0][0] = 1;
+        // System.out.println(Arrays.deepToString(numbers3));
+        int[][][] numbers4 = new int[2][3][5];
+        numbers4[0][0][0] = 1;
+        // System.out.println(Arrays.deepToString(numbers4));
+        // new syntax:
+        int[][] numbers5 = {{1,2,3}, {4,5,6}};
+        numbers5[0][0] = 9;
+        // System.out.println(Arrays.deepToString(numbers5));
+
+        // Constants
+        final float PI = 3.14F;
+        System.out.println(PI);
     }
 }
