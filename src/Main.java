@@ -2,6 +2,7 @@ import java.awt.*;
 import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -120,13 +121,25 @@ public class Main {
         // Formating Numbers
         NumberFormat currency = NumberFormat.getCurrencyInstance();
         String result1 = currency.format(1234567.891);
-        System.out.println(result1);
+        // System.out.println(result1);
         // long version
         NumberFormat percent = NumberFormat.getPercentInstance();
         String result2 = percent.format(0.1);
-        System.out.println(result2);
+        // System.out.println(result2);
         // short version
         String result3 = NumberFormat.getPercentInstance().format(0.3);
-        System.out.println(result3);
+        // System.out.println(result3);
+
+        // Reading Input
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Age: ");
+//        byte yourAge = scanner.nextByte();
+//        System.out.println("You are " + yourAge);
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Name: ");
+        String name = scanner.nextLine().trim();
+        System.out.println("You are " + name);
+
     }
 }
