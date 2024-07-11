@@ -84,12 +84,26 @@ public class Main {
         ++z;
         // System.out.println(z);
         int w = z++;
-        System.out.println(z);
-        System.out.println(w); // prints 3 because w takes the value of z before the last addition
+        // System.out.println(z);
+        // System.out.println(w); // prints 3 because w takes the value of z before the last addition
         w = ++z;
-        System.out.println(z);
-        System.out.println(w); // prints 5 because w takes the value of z after the last addition
+        // System.out.println(z);
+        // System.out.println(w); // prints 5 because w takes the value of z after the last addition
 
-        // Order of operations
+        // Implicit Casting (byte -> short -> int -> long -> float -> double)
+        short a = 1;
+        int b = a + 2;
+        // System.out.println(a);
+        // System.out.println(b);
+
+        // Explicit Casting
+        double c = 1.1;
+        int d = (int)c + 2;
+        // System.out.println(c);
+        // System.out.println(d);
+        String e = "1";
+        int f = Integer.parseInt(e) + 2;
+        System.out.println(e);
+        System.out.println(f);
     }
 }
