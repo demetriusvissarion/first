@@ -103,7 +103,17 @@ public class Main {
         // System.out.println(d);
         String e = "1";
         int f = Integer.parseInt(e) + 2;
-        System.out.println(e);
-        System.out.println(f);
+        // System.out.println(e);
+        // System.out.println(f);
+
+        // The Math Class
+        result = Math.round(1.1F);
+        System.out.println(result);
+        result = (int)Math.ceil(1.1F);
+        System.out.println(result);
+        result = (int)Math.floor(1.1F);
+        System.out.println(result);
+        result = Math.max(1, 2);
+        System.out.println(result);
     }
 }
