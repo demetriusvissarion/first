@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Date;
 
@@ -108,12 +109,24 @@ public class Main {
 
         // The Math Class
         result = Math.round(1.1F);
-        System.out.println(result);
+        // System.out.println(result);
         result = (int)Math.ceil(1.1F);
-        System.out.println(result);
+        // System.out.println(result);
         result = (int)Math.floor(1.1F);
-        System.out.println(result);
+        // System.out.println(result);
         result = Math.max(1, 2);
-        System.out.println(result);
+        // System.out.println(result);
+
+        // Formating Numbers
+        NumberFormat currency = NumberFormat.getCurrencyInstance();
+        String result1 = currency.format(1234567.891);
+        System.out.println(result1);
+        // long version
+        NumberFormat percent = NumberFormat.getPercentInstance();
+        String result2 = percent.format(0.1);
+        System.out.println(result2);
+        // short version
+        String result3 = NumberFormat.getPercentInstance().format(0.3);
+        System.out.println(result3);
     }
 }
