@@ -74,6 +74,22 @@ public class Main {
 
         // Constants
         final float PI = 3.14F;
-        System.out.println(PI);
+        // System.out.println(PI);
+
+        // Arithmetic Expressions
+        double result = (double)10 / (double)3;
+        // System.out.println(result);
+        int z = 1;
+        z++;
+        ++z;
+        // System.out.println(z);
+        int w = z++;
+        System.out.println(z);
+        System.out.println(w); // prints 3 because w takes the value of z before the last addition
+        w = ++z;
+        System.out.println(z);
+        System.out.println(w); // prints 5 because w takes the value of z after the last addition
+
+        // Order of operations
     }
 }
