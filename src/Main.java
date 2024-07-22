@@ -176,17 +176,33 @@ public class Main {
 //        while (!input.equals("quit")) {
 //            System.out.print("Input: ");
 //            input = scanner.next().toLowerCase();
-//            System.out.println(input);
+//            if (!input.equals("quit")) {
+//                System.out.println(input);
+//            }
 //        }
 
         // do while loops
-        Scanner scanner = new Scanner(System.in);
-        String input = "";
-        do {
-            System.out.print("Input: ");
-            input = scanner.next().toLowerCase();
-            System.out.println(input);
+//        Scanner scanner = new Scanner(System.in);
+//        String input = "";
+//        do {
+//            System.out.print("Input: ");
+//            input = scanner.next().toLowerCase();
+//            System.out.println(input);
+//        }
+//        while (!input.equals("quit"));
+
+        // general notes about loops:
+        // - if while(true) is used, the loop can be stopped with if conditional containing "break"
+
+        // for each loops - iterate over arrays or collections
+        String[] fruits = {"Apple", "Mango", "Orange"};
+
+//        for (int i = 0; i < fruits.length; i++) {
+//            System.out.println(fruits[i]);
+//        }
+
+        for (String fruit : fruits) {
+            System.out.println(fruit);
         }
-        while (!input.equals("quit"));
     }
 }
