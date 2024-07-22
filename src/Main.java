@@ -171,12 +171,22 @@ public class Main {
 //        }
 
         // while loop case 2
+//        Scanner scanner = new Scanner(System.in);
+//        String input = "";
+//        while (!input.equals("quit")) {
+//            System.out.print("Input: ");
+//            input = scanner.next().toLowerCase();
+//            System.out.println(input);
+//        }
+
+        // do while loops
         Scanner scanner = new Scanner(System.in);
         String input = "";
-        while (!input.equals("quit")) {
+        do {
             System.out.print("Input: ");
             input = scanner.next().toLowerCase();
             System.out.println(input);
         }
+        while (!input.equals("quit"));
     }
 }
