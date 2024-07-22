@@ -159,9 +159,24 @@ public class Main {
 //        }
 
         // for loops
-        for (int i = 0; i < 5; i ++) {
-            System.out.println("Hello World " + i);
-        }
+//        for (int i = 0; i < 5; i ++) {
+//            System.out.println("Hello World " + i);
+//        }
 
+        // while loop case 1
+//        int i = 0;
+//        while (i < 5) {
+//            System.out.println("Hello World " + i);
+//            i++;
+//        }
+
+        // while loop case 2
+        Scanner scanner = new Scanner(System.in);
+        String input = "";
+        while (!input.equals("quit")) {
+            System.out.print("Input: ");
+            input = scanner.next().toLowerCase();
+            System.out.println(input);
+        }
     }
 }
