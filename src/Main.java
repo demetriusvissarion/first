@@ -136,10 +136,29 @@ public class Main {
 //        byte yourAge = scanner.nextByte();
 //        System.out.println("You are " + yourAge);
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Name: ");
-        String name = scanner.nextLine().trim();
-        System.out.println("You are " + name);
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Name: ");
+//        String name = scanner.nextLine().trim();
+//        System.out.println("You are " + name);
+
+        // FizzBuzz
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Enter a number: ");
+//        int number = scanner.nextInt();
+//        if (number % 3 == 0 && number % 5 == 0) {
+//            System.out.println("FizzBuzz");
+//        }
+//        else if (number % 3 == 0) {
+//            System.out.println("Fizz");
+//        }
+//        else if (number % 5 == 0) {
+//            System.out.println("Buzz");
+//        }
+//        else {
+//            System.out.println(number);
+//        }
+
+        // for loops
 
     }
 }
